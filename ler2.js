@@ -6,14 +6,14 @@ function pVal(url, callback){
 				var data = JSON.parse(xmlhttp.responseText)
 			}catch(err){
 				console.log(err.message + " in " + xmlhttp.responseText)
-				return;
+				return
 			}
-			callback(data);
+			callback(data)
 		}
 	};
 
-	xmlhttp.open("GET", 'pedidos.json', true);
-	xmlhttp.send();
+	xmlhttp.open("GET", 'pedidos.json', true)
+	xmlhttp.send()
 }
 
 pVal('pedidos.json', function(dados){
@@ -22,7 +22,7 @@ pVal('pedidos.json', function(dados){
 		html += "<h4>Data: " + dados["pedidos"][i]["data"] + "</h4>"
 		html += "<h4>Valor total: " + dados["pedidos"][i]["valor_total"] + "</h4>"
 		html += "<h4>Vendedor: " + dados["pedidos"][i]["vendedor"] + "</h4>"
-		html += "<h4>Cod do Pedido: " + dados["pedidos"][i]["codigo_do_pedido"] + "</h4>";
+		html += "<h4>Cod do Pedido: " + dados["pedidos"][i]["codigo_do_pedido"] + "</h4>"
 		html += "<h4>Produto: " + dados["pedidos"][i]["produto"] + "</h4>"
 		html += "<h4>Valor: " + dados["pedidos"][i]["valor"] + "</h4></br>"
 	}	
