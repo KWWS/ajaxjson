@@ -1,0 +1,31 @@
+{	
+	"pedidos":
+		[
+		{
+			"data": "2019-10-02",
+			"valor_total": 178,
+			"vendedor": "Kelvio",
+			"codigo_do_pedido": 234,
+			"produto": "Estribo",
+			"valor": 1500
+		},
+		{
+			"data": "2019-10-21",
+			"valor_total": 44,
+			"vendedor": "Paulo",
+			"codigo_do_pedido": 777,
+			"produto": "CD",
+			"valor": 7
+		},
+		{
+			"data": "2019-10-18",
+			"valor_total": 246,
+			"vendedor": "Laura",
+			"codigo_do_pedido": 555,
+			"produto": "CD",
+			"valor": 7
+		}
+
+	]
+
+}
